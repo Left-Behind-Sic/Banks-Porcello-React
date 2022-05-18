@@ -1,5 +1,5 @@
-import React from "React";
-import Recipe from "./recipe";
+import React from "react";
+import Recipe from "./Recipe";
 
 export default function Menu({ recipes }) {
     return (

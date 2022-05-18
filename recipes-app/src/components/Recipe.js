@@ -1,13 +1,15 @@
-import React from "React"
+import React from "react"
 import Instructions from "./Instructions"
-import IngridientsList from "./IngridientsList"
+import IngredientsList from "./IngredientsList"
+import StarRating from "./star/StarRating"
 
-export default function Recipe({ name, ingridients, steps }) {
+export default function Recipe({ name, ingredients, steps }) {
     return (
         <section id={name.toLowerCase().replace(/ /g, "-")} >
             <h1>{name}</h1>
-            <IngridientsList list={ingridients} />
+            <IngredientsList list={ingredients} />
             <Instructions title="Cooking instructions" steps={steps} />
+            <StarRating />
         </section>
     )
 }
