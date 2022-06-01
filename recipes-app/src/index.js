@@ -8,9 +8,7 @@ import { ColorProvider } from "./components/color-hooks";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <ColorProvider>
-            <App />
-        </ColorProvider>
+        <App />
     </React.StrictMode>
 );
 
